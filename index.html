@@ -5,15 +5,28 @@
 </head>
 <body>
 	<script>
-		function soma(n1, n2) //Criando função de soma que recebe dois números como parâmetro
+		function retornaSexo(sexo)
 		{
-			var resultado = n1 + n2; //Criando variável que vai armazenar a soma dos parâmetros
+			//M, F
+			//Masculino, Feminino
 
-			return resultado; //Retornando a soma
+			if (sexo === 'M') //Se for 'M' vai ser Masculno
+			{
+				return 'Masculino';
+			}
+
+			if(sexo === 'F') //Se for 'F' vai ser Feminino
+			{
+				return 'Feminino';
+			}
+
+			else{			//Senão for nenhum vai ser Outro
+				return 'Outro'; 
+			}
 		}
 
-		var resultado = soma(5, 5); //Criando variável e instanticando a função
-		console.log(resultado); //Printando o resultado na tela
+		var resultado = retornaSexo('M');
+		console.log(resultado);
 	</script>
 
 </body>
