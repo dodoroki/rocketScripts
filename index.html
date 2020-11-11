@@ -7,21 +7,13 @@
 	<script>
 		function retornaSexo(sexo)
 		{
-			//M, F
-			//Masculino, Feminino
-
-			if (sexo === 'M') //Se for 'M' vai ser Masculno
-			{
-				return 'Masculino';
-			}
-
-			if(sexo === 'F') //Se for 'F' vai ser Feminino
-			{
-				return 'Feminino';
-			}
-
-			else{			//Senão for nenhum vai ser Outro
-				return 'Outro'; 
+			switch(sexo){ //Switch Case
+				case 'M' //Caso for M retorna Masculino
+					return 'Masculino'
+				case 'F' //Caso for F retorna Feminino
+					return 'Feminino'
+				default: //default será Outro caso nenhum seja passado
+					return 'Outro';
 			}
 		}
 
