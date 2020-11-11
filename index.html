@@ -5,11 +5,15 @@
 </head>
 <body>
 	<script>
-		var x = 10, y = 5;
+		function soma(n1, n2) //Criando função de soma que recebe dois números como parâmetro
+		{
+			var resultado = n1 + n2; //Criando variável que vai armazenar a soma dos parâmetros
 
-		x *= y; //é a mesma coisa que isto -> x = x + 3
+			return resultado; //Retornando a soma
+		}
 
-		console.log(x)
+		var resultado = soma(5, 5); //Criando variável e instanticando a função
+		console.log(resultado); //Printando o resultado na tela
 	</script>
 
 </body>
