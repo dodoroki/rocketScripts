@@ -5,20 +5,13 @@
 </head>
 <body>
 	<script>
-		function retornaSexo(sexo)
-		{
-			switch(sexo){ //Switch Case
-				case 'M' //Caso for M retorna Masculino
-					return 'Masculino'
-				case 'F' //Caso for F retorna Feminino
-					return 'Feminino'
-				default: //default será Outro caso nenhum seja passado
-					return 'Outro';
-			}
-		}
+		//AND, OR, NOT
 
-		var resultado = retornaSexo('M');
-		console.log(resultado);
+		var sexo = 'M';
+
+		var masculino = sexo == 'M';
+
+		console.log(masculino);
 	</script>
 
 </body>
